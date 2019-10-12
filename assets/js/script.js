@@ -135,7 +135,7 @@ class MixOrMatch {
         // });
     }
     getCardType(card) {
-        return card.getElementByClassName('card-value')[0].src;
+        return card.getElementsByClassName('card-value')[0].src;
     }
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;

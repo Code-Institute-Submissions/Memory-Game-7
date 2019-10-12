@@ -1,14 +1,4 @@
-@font-face {
-    font-family: "Creepy";
-    src: url("Assets/Fonts/Creepy.woff") format("woff"),
-    src: url("Assets/Fonts/Creepy.woff2") format("woff2")
-}
-
-@font-face {
-    font-family: "Lunacy";
-    src: url("Assets/Fonts/Lunacy.woff") format("woff"),
-    src: url("Assets/Fonts/Lunacy.woff2") format("woff2")
-}
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 * {
     box-sizing: border-box;
@@ -20,12 +10,11 @@ html{
 
 body {
     margin: 0;
-    background: radial-gradient(#9D5900, #3D2200);
+    background: radial-gradient(#ABEBC6, #D5F5E3);
 }
 
 .page-title {
     color: #FF6D00;
-    font-family: Creepy, serif;
     font-weight: normal;
     text-align: center;
     font-size: 6em;
@@ -38,7 +27,6 @@ body {
 }
 
 .game-info {
-    font-family: Lunacy, serif;
     color: #FFBB89;
     font-size: 4em;
 }
@@ -72,7 +60,7 @@ i {
     overflow: hidden;
     backface-visibility: hidden;
     border-radius: 5px;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     transition: transform 500ms ease-in-out;
 }
@@ -104,7 +92,6 @@ i {
     align-items: center;
     z-index: 100;
     color: #FF6D00;
-    font-family: Creepy, serif;
 }
 
 .overlay-text-small {
@@ -127,26 +114,16 @@ i {
         font-size: 10em;
     }
 }
-@keyframes dance {
-    0%, 100% {
-        transform: rotate(0);
-    }
-    25% {
-        transform: rotate(-30deg);
-    }
-    75% {
-        transform: rotate(30deg);
-    }
-}
+
 
 .card-back{
-    background-color: black;
-    border-color: #FF6D00;
+    background-color: #F0F3F4;
+    border-color: red;
 }
 
 .card-front {
-    background-color: #FFBB89;
-    border-color: #333;
+    background-color: #F0F3F4;
+    border-color: red;
     transform: rotateY(180deg);
 }
 
@@ -186,15 +163,12 @@ i {
     right: 0;
 }
 
-.wink {
-    position: absolute;
-    top: 30%;
-    right: 20%;
-    transition: width 100ms ease-in-out, height 100ms ease-in-out;
-}
-
 .card-back:hover .wink {
     transform: translateY(0);
+}
+
+.logo {
+    width: 90%;
 }
 
 @media (max-width: 600px) {
